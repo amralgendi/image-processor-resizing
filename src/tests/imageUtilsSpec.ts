@@ -2,6 +2,7 @@ import { resizeImage, checkForImage } from "../utils/imageUtils";
 import fs from "fs";
 import path from "path";
 
+//USED JASMINE'S OFFICIAL RECOMMENDATION OF TESTING ASYNC FUNCTIONS
 describe('Tests Resizing Image Function. Tests are done on the "kitten.png" Image', () => {
   it("Should Return Thumb File Location with concatenated with and height", async () => {
     const result = await resizeImage(
