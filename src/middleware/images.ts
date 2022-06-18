@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 
+//CHECK FOR ERRORS IN IMAGE ENDPOINT PARAMS
 const checkParams = (req: Request, res: Response, next: NextFunction) => {
   const { filename, width, height } = req.query;
   if (!filename)

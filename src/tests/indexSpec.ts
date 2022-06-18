@@ -5,7 +5,7 @@ import path from "path";
 
 const request = supertest(app);
 
-describe("Tests API endpoint responses", () => {
+describe("Tests API DUMMY endpoint responses", () => {
   it("Should get hello and status code 200", async () => {
     const response = await request.get("/test");
 
@@ -37,9 +37,16 @@ describe("Tests Image Processing Endpoint", () => {
   it("Should return 200 Status code", async () => {
     const randomIndex = Math.floor(Math.random() * images.length);
     const response = await request.get(
-      `/api/images?filename=${images[randomIndex].name}`
+      `/api/images?filename=${images[randomIndex].name}&width=2&height=2`
     );
 
     expect(response.status).toBe(200);
+  });
+  it("Should return 400 Status code", async () => {
+    const response = await request.get(
+      `/api/images?filename=sjhfbdskjhabjsabfjs&width=2&height=2`
+    );
+
+    expect(response.status).toBe(400);
   });
 });

@@ -7,7 +7,6 @@
     "jasmine": "jasmine",
     "build": "npx tsc",
     "start": "npx tsc && node dist",
-    "try": "ts-node src/index.ts",
     "test": "npm run build && npm run jasmine"
   },
   "keywords": [],
