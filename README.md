@@ -11,9 +11,9 @@ Run the command: "npm start" in the terminal of the project directory
 '/api/images':
 
 -   required params :
-    -- filename: Name of the file to fetch and resize
-    -- width: Width of the aimeg processed
-    -- height: Height of the image processed
+    -   filename: Name of the file to fetch and resize
+    -   width: Width of the aimeg processed
+    -   height: Height of the image processed
 
 ## Testing
 
