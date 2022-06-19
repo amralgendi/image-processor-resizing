@@ -1,18 +1,17 @@
-import express from "express";
-import imageRouter from "./routes/images";
+import express from 'express'
+import imageRouter from './routes/images'
+const app = express()
 
-const app = express();
-
-app.use("/api/images", imageRouter);
+app.use('/api/images', imageRouter)
 
 //TEST DUMMY ENDPOINT
-app.get("/test", (req, res) => {
-  res.send("hello");
-});
+app.get('/test', (req, res) => {
+    res.send('hello')
+})
 
 //SERVER LISTNENING IN PORT 3000
 app.listen(3000, () => {
-  console.log("Listening");
-});
+    console.log('Listening')
+})
 
-export default app;
+export default app
