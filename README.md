@@ -1,11 +1,13 @@
-#Image Processor
+# Image Processor
+
 An image processor app that resizes the image in the app directory and caches an optimized image for future use
 
-##How to run:
+## How to run:
 
 Run the command: "npm start" in the terminal of the project directory
 
-##Endpoints
+## Endpoints
+
 '/api/images':
 
 -   required params :
@@ -13,6 +15,6 @@ Run the command: "npm start" in the terminal of the project directory
     -- width: Width of the aimeg processed
     -- height: Height of the image processed
 
-##Testing
+## Testing
 
 For testing purposes, please leave the kitten.png image in the media/images directory, or adjust the test to go along your test image
